@@ -70,7 +70,7 @@ metadata:
   name: nginx-ingress
   namespace: nginx-ingress
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
   - port: 80
     targetPort: 80
@@ -82,5 +82,3 @@ spec:
     name: https
   selector:
     app: nginx-ingress
-  externalIPs:
-    - 172.17.0.15

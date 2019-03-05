@@ -6,3 +6,11 @@ Ingress enables externally-reachable urls, load balance traffic, terminate SSL, 
 In this scenario you will learn how to deploy and configure Ingress rules to manage incoming HTTP requests.
 
 
+```bash
+kubectl get ingress --all-namespaces
+NAMESPACE   NAME             HOSTS           ADDRESS        PORTS   AGE
+default     webapp-ingress   singh.hbot.io   34.95.66.133   80      5m
+```
+
+WARNING: DO NOT USE MASTER IP. YOU MUST MUST THE IP FROM THE CLI ONLY
+Then use the given IP with DNS

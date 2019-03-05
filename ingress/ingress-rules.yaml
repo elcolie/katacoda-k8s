@@ -2,9 +2,11 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: webapp-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
-  - host: my.kubernetes.example
+  - host: singh.hbot.io
     http:
       paths:
       - path: /webapp1
